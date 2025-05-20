@@ -198,3 +198,21 @@
 .bg-gradient-overlay {
   background: radial-gradient(circle at top center, rgba(124, 58, 237, 0.1) 0%, transparent 70%);
 }
+
+/* Make the wave animation smoother */
+@keyframes wave {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-wave-slow {
+  animation: wave 15s linear infinite;
+}
+
+.animate-wave-fast {
+  animation: wave 8s linear infinite reverse;
+}
